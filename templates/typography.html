@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lembre-se - Modelo de site Bootstrap multiuso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sua descrição de página aqui" />
+  <meta name="author" content="" />
+
+  <link href="static/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="static/css/prettyPhoto.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <link id="t-colors" href="static/color/default.css" rel="stylesheet" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="static/ico/favicon.png" />
+
+  </head>
+
+<body>
+<audio autoplay loop hidden>
+  <source src="static/musica/Lembre de Mim (Canção de Ninar) (De _Viva - A Vida é uma Festa__Com letra)(MP3_160K).mp3" type="audio/mpeg">
+</audio>
+  <div id="wrapper">
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <ul class="topmenu">
+                <li><a href="/">Início</a> &#47;</li>
+                <li><a href="/termos">Termos</a> &#47;</li>
+                <li><a href="#">Política de privacidade</a></li>
+              </ul>
+            </div>
+            <div class="span6">
+
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-circled icon-bglight icon-facebook"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-circled icon-bglight icon-twitter"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-circled icon-linkedin icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-circled icon-pinterest  icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google +"><i class="icon-circled icon-google-plus icon-bglight"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <h1><a href="/"><i class="icon-tint"></i> Lembre-se</a></h1>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li><a href="/">Início</a></li>
+                    <li class="dropdown active">
+                      <a href="#">Recursos<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/tipografia">Tipografia</a></li>
+                        <li><a href="/componente">Componentes</a></li>
+                        <li><a href="/icone">Ícones</a></li>
+                        <li><a href="/variacao_icone">Variações de ícones</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Páginas <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/sobre">Sobre nós</a></li>
+                        <li><a href="/tabela">Tabelas de preços</a></li>
+                        <li><a href="/404">404</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfólio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/portfolio2">Portfólio 2 colunas</a></li>
+                        <li><a href="/portfolio3">Portfólio 3 colunas</a></li>
+                        <li><a href="/portfolio4">Portfólio 4 colunas</a></li>
+                        <li><a href="/detalhe_portifolio">Detalhes do portfólio</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/blog_esquerda">Blog barra lateral esquerda</a></li>
+                        <li><a href="/blog_direita">Blog barra lateral direita</a></li>
+                        <li><a href="/post_esquerda">Post barra lateral esquerda</a></li>
+                        <li><a href="/post_direita">Post barra lateral direita</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/contato">Contato </a>
+                    </li>
+                    <li>
+                          <a href="/deslogar" class="text-danger">
+                              <i class="bi bi-box-arrow-right">
+                                  Sair {{ session.get("usuario_nome") }}
+                              </i>
+                          </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="inner-heading">
+              <h2>Tipografia</h2>
+            </div>
+          </div>
+          <div class="span8">
+            <ul class="breadcrumb">
+              <li><a href="/">Início</a> <i class="icon-angle-right"></i></li>
+              <li><a href="#">Recursos</a> <i class="icon-angle-right"></i></li>
+              <li class="active">Tipografia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <h4>Estilos de cabeçalho H1-H6</h4>
+            <h1>Cabeçalho H1</h1>
+            <h2>Cabeçalho H2</h2>
+            <h3>Cabeçalho H3</h3>
+            <h4>Cabeçalho H4</h4>
+            <h5>Cabeçalho H5</h5>
+            <h6>Cabeçalho H6</h6>
+          </div>
+          <div class="span4">
+            <h4>Exemplo de parágrafo</h4>
+
+            <p>
+              <strong>O destaque visual</strong> é fundamental para uma leitura escaneável. Este é um exemplo de texto comum com formatação em negrito para chamar a atenção do usuário.
+            </p>
+
+            <p class="lead">O estilo "Lead" é usado para parágrafos de introdução que precisam de maior destaque e tamanho de fonte.
+            </p>
+            <p><em>
+                O texto em itálico é ideal para citações breves ou ênfases sutis dentro de um bloco de conteúdo maior.
+              </em></p>
+            <p><small>
+                O texto pequeno (small) é geralmente utilizado para notas de rodapé, avisos legais ou informações secundárias.
+              </small></p>
+          </div>
+          <div class="span4">
+            <h4>Imagem flutuante no parágrafo</h4>
+            <img src="static/img/dummies/dummy-1.jpg" alt="" class="align-left" />
+            <p>
+              Integrar imagens ao texto ajuda a quebrar a monotonia visual. No Bootstrap, as classes de alinhamento permitem que o texto contorne a imagem suavemente, mantendo a harmonia do layout responsivo.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h4>Descrição</h4>
+            <dl>
+              <dt>Web Design Responsivo</dt>
+              <dd>Abordagem de design que permite que sites sejam visualizados adequadamente em diversos dispositivos.</dd>
+              <dt>Experiência do Usuário (UX)</dt>
+              <dd>Foca na jornada do usuário e como ele interage com o sistema de forma intuitiva.</dd>
+              <dt>Interface do Usuário (UI)</dt>
+              <dd>Refere-se aos elementos visuais e interativos com os quais o usuário entra em contato diretamente.</dd>
+            </dl>
+          </div>
+
+          <div class="span6">
+            <h4>Descrição Horizontal</h4>
+            <dl class="dl-horizontal">
+              <dt>Bootstrap</dt>
+              <dd>Framework front-end mais popular para desenvolvimento de sites responsivos e mobile-first.</dd>
+              <dt>HTML5</dt>
+              <dd>A linguagem de marcação padrão para criar a estrutura das páginas da web modernas.</dd>
+              <dt>CSS3</dt>
+              <dd>Responsável pelo estilo, layout e animações que dão vida ao design do site.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span3">
+            <h4>Listas não ordenadas</h4>
+            <ul>
+              <li>Desenvolvimento Front-end</li>
+              <li>Design de Interfaces</li>
+              <li>Arquitetura de Dados</li>
+              <li>Sistemas Operacionais
+                <ul>
+                  <li>Linux Ubuntu</li>
+                  <li>Windows Server</li>
+                  <li>MacOS Sequoia</li>
+                </ul>
+              </li>
+              <li>Segurança da Informação</li>
+            </ul>
+          </div>
+
+          <div class="span3">
+            <h4>Não ordenadas sem estilo</h4>
+            <ul class="unstyled">
+              <li>Item sem marcador</li>
+              <li>Ideal para menus</li>
+              <li>Customização total</li>
+              <li>Sub-itens também limpos
+                <ul>
+                  <li>Nível interno</li>
+                  <li>Sem recuo padrão</li>
+                </ul>
+              </li>
+              <li>Limpeza visual</li>
+            </ul>
+          </div>
+
+          <div class="span3">
+            <h4>Listas ordenadas</h4>
+            <ol>
+              <li>Primeiro passo</li>
+              <li>Segundo passo</li>
+              <li>Terceiro passo</li>
+              <li>Sub-etapas
+                <ol>
+                  <li>Tarefa A</li>
+                  <li>Tarefa B</li>
+                </ol>
+              </li>
+              <li>Conclusão do processo</li>
+            </ol>
+          </div>
+
+          <div class="span3">
+            <h4>Ordenadas sem estilo</h4>
+            <ol class="unstyled">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ol>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                  <li>Ac tristique libero volutpat at</li>
+                </ol>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <h4>Listas em linha</h4>
+            <ul class="inline">
+              <li>Home</li>
+              <li>Sobre</li>
+              <li>Serviços</li>
+              <li>Blog</li>
+              <li>Contato</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <h4>Citação</h4>
+            <blockquote>"A tecnologia move o mundo, mas são as pessoas que dão propósito a essa movimentação constante."
+            </blockquote>
+          </div>
+          <div class="span4">
+            <h4>Citação e referência</h4>
+            <blockquote>"O design não é apenas o que parece, mas sim como ele funciona para resolver problemas reais."
+              <cite>Steve Jobs, Apple Inc.</cite>
+            </blockquote>
+          </div>
+          <div class="span4">
+            <h4>Citação em destaque à esquerda e direita</h4>
+            <span class="pullquote-left">
+              Destaque posicionado à esquerda para enfatizar uma frase importante no meio do conteúdo.
+                </span>
+            <span class="pullquote-right margintop10">
+              Destaque à direita para criar um equilíbrio visual no corpo do texto da página.
+                </span>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <h4>Informações Técnicas e Semântica</h4>
+            <pre class="prettyprint linenums">
+A estrutura semântica de um site é a base para um bom SEO.
+Utilizar tags como &lt;header&gt;, &lt;section&gt; e &lt;article&gt; ajuda os motores de busca
+a entenderem a hierarquia da informação. Além disso, manter um código limpo
+e bem comentado facilita a manutenção por outros desenvolvedores no futuro.
+Este bloco de texto mantém a formatação de espaçamento original (monospaçada),
+sendo ideal para exibir notas técnicas ou trechos de documentação.
+            </pre>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="widget">
+              <div class="footer_logo">
+                <h3><a href="/"><i class="icon-tint"></i> Lembre-se</a></h3>
+              </div>
+              <address>
+                        <strong>Lembre-se Company Inc.</strong><br>
+                      Somestreet KW 101, Park Village W.01<br>
+                      Jacarta 13426 Indonésia
+                   </address>
+              <p>
+                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                <i class="icon-envelope-alt"></i> email@domainname.com
+              </p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Navegar pelas páginas</h5>
+              <ul class="link-list">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="/termos">Termos e condições</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Comunicados de imprensa</a></li>
+                <li><a href="#">O que fizemos</a></li>
+                <li><a href="#">Nosso fórum de suporte</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Do flickr</h5>
+              <div class="flickr_badge">
+                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p><span>&copy; Lembre-se Inc. Todos os direitos reservados</span></p>
+              </div>
+
+            </div>
+
+            <div class="span6">
+              <div class="credits">
+                Criado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
+
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <script src="static/js/modernizr.custom.js"></script>
+  <script src="static/js/toucheffects.js"></script>
+  <script src="static/js/google-code-prettify/prettify.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/portfolio/jquery.quicksand.js"></script>
+  <script src="static/js/portfolio/setting.js"></script>
+  <script src="static/js/animate.js"></script>
+
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

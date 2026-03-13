@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lembre-se - Modelo de site Bootstrap multiuso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sua descrição de página aqui" />
+  <meta name="author" content="" />
+
+  <link href="static/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="static/css/prettyPhoto.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <link id="t-colors" href="static/color/default.css" rel="stylesheet" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="static/ico/favicon.png" />
+
+  </head>
+
+<body>
+<audio autoplay loop hidden>
+  <source src="static/musica/Lembre de Mim (Canção de Ninar) (De _Viva - A Vida é uma Festa__Com letra)(MP3_160K).mp3" type="audio/mpeg">
+</audio>
+  <div id="wrapper">
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <ul class="topmenu">
+                <li><a href="/">Início</a> &#47;</li>
+                <li><a href="/termos">Termos</a> &#47;</li>
+                <li><a href="#">Política de privacidade</a></li>
+              </ul>
+            </div>
+            <div class="span6">
+
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-circled icon-bglight icon-facebook"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-circled icon-bglight icon-twitter"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-circled icon-linkedin icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-circled icon-pinterest  icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google +"><i class="icon-circled icon-google-plus icon-bglight"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <h1><a href="/"><i class="icon-tint"></i> Lembre-se</a></h1>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li><a href="/">Início</a></li>
+                    <li class="dropdown active">
+                      <a href="#">Recursos<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/tipografia">Tipografia</a></li>
+                        <li><a href="/componente">Componentes</a></li>
+                        <li><a href="/icone">Ícones</a></li>
+                        <li><a href="/variacao_icone">Variações de ícones</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Páginas <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/sobre">Sobre nós</a></li>
+                        <li><a href="/tabela">Tabelas de preços</a></li>
+                        <li><a href="/404">404</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfólio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/portfolio2">Portfólio 2 colunas</a></li>
+                        <li><a href="/portfolio3">Portfólio 3 colunas</a></li>
+                        <li><a href="/portfolio4">Portfólio 4 colunas</a></li>
+                        <li><a href="/detalhe_portifolio">Detalhes do portfólio</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/blog_esquerda">Blog barra lateral esquerda</a></li>
+                        <li><a href="/blog_direita">Blog barra lateral direita</a></li>
+                        <li><a href="/post_esquerda">Post barra lateral esquerda</a></li>
+                        <li><a href="/post_direita">Post barra lateral direita</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/contato">Contato </a>
+                    </li>
+                    <li>
+                      <a href="/login">Login </a>
+                    </li>
+                    <li>
+                          <a href="/deslogar" class="text-danger">
+                              <i class="bi bi-box-arrow-right">
+                                  Sair {{ session.get("usuario_nome") }}
+                              </i>
+                          </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="intro">
+      <div class="intro-content">
+        <h2>Bem-vindo ao Lembre-se!</h2>
+        <h3>Soluções inteligentes para impulsionar a sua produtividade diária e gerenciar seus projetos.</h3>
+        <div>
+          <a href="#content" class="btn-get-started scrollto">Começar</a>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="icon">
+                    <span class="badge badge-info badge-circled">1</span>
+                    <i class="ico icon-dropbox icon-5x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>Pronto para usar</strong></h4>
+                    <p>
+                     Acesse todas as ferramentas instantaneamente e comece a gerenciar seus projetos sem complicações ou instalações demoradas.
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="icon">
+                    <span class="badge badge-success badge-circled">2</span>
+                    <i class="ico icon-bitbucket icon-5x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>Novo estilo</strong></h4>
+                    <p>
+                      Desfrute de uma interface amigável e de um design limpo, pensado exclusivamente para entregar a melhor experiência visual.
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="icon">
+                    <span class="badge badge-warning badge-circled">3</span>
+                    <i class="ico icon-rocket icon-5x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>Carregamento rápido</strong></h4>
+                    <p>
+                      Nossa plataforma é construída e otimizada para alta performance, garantindo fluidez, agilidade e muito mais tempo livre.
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="icon">
+                    <span class="badge badge-important badge-circled">4</span>
+                    <i class="ico icon-cut icon-5x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>Reduza seu tempo</strong></h4>
+                    <p>
+                      Otimize seus processos diários, automatize tarefas e foque os seus esforços naquilo que realmente importa para o seu negócio.
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="span12">
+            <div class="cta-box">
+              <div class="row">
+                <div class="span8">
+                  <div class="cta-text">
+                    <h2>Preço especial por tempo <span>limitado</span></h2>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="cta-btn">
+                    <a href="#" class="btn btn-color">Aja Agora <i class="icon-caret-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="offer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span12">
+                <div class="aligncenter">
+                  <h3>Nossos recursos e preços</h3>
+                  <blockquote>
+                    Oferecemos total transparência e flexibilidade. Nossos pacotes e recursos foram cuidadosamente desenhados para crescer lado a lado com o sucesso da sua empresa.
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="span3">
+                <h5>Escolha um pacote e comece a crescer</h5>
+                <p>
+                  Trabalhamos duro para entregar o melhor custo-benefício do mercado, garantindo atualizações constantes, estabilidade e segurança de ponta.
+                </p>
+                <p>
+                  Não importa o tamanho da sua equipe ou da sua demanda, temos a infraestrutura perfeita e o suporte especializado para atender você.
+                </p>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-plain">
+                  <div class="heading">
+                    <h4>Padrão</h4>
+                    <span>$9 / Mês</span>
+                  </div>
+                  <div class="desc">
+                    <ul>
+                      <li>Para 1 Aplicação</li>
+                      <li>Suporte gratuito por um ano</li>
+                      <li>Espaço em disco ilimitado</li>
+                    </ul>
+                  </div>
+                  <div class="action">
+                    <a href="#" class="btn btn-inverse">Inscrever-se</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-plain">
+                  <div class="heading">
+                    <h4>Médio</h4>
+                    <span>$29 / Mês</span>
+                  </div>
+                  <div class="desc">
+                    <ul>
+                      <li>Para 10 Aplicações</li>
+                      <li>Suporte vitalício gratuito</li>
+                      <li>Espaço em disco ilimitado</li>
+                    </ul>
+                  </div>
+                  <div class="action">
+                    <a href="#" class="btn btn-inverse">Inscrever-se</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3">
+                <div class="pricing-box-plain">
+                  <div class="heading">
+                    <h4>Elite</h4>
+                    <span>$59 / Mês</span>
+                  </div>
+                  <div class="desc">
+                    <ul>
+                      <li>Para aplicações ilimitadas</li>
+                      <li>Suporte vitalício gratuito</li>
+                      <li>Espaço em disco ilimitado</li>
+                    </ul>
+                  </div>
+                  <div class="action">
+                    <a href="#" class="btn btn-color">Inscrever-se</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h3>Trabalhos recentes</h3>
+            <div class="row">
+
+              <div class="grid cs-style-3">
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="static/img/dummies/works/1.jpg" alt=""></div>
+                      <figcaption>
+                        <h3>Nome do portfólio</h3>
+                        <p>
+                          <a href="static/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Legenda do portfólio aqui"><i class="icon-zoom-in icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="#"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="static/img/dummies/works/2.jpg" alt=""></div>
+                      <figcaption>
+                        <h3>Nome do portfólio</h3>
+                        <p>
+                          <a href="static/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Legenda do portfólio aqui"><i class="icon-zoom-in icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="#"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="static/img/dummies/works/3.jpg" alt=""></div>
+                      <figcaption>
+                        <h3>Nome do portfólio</h3>
+                        <p>
+                          <a href="static/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Legenda do portfólio aqui"><i class="icon-zoom-in icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="#"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="static/img/dummies/works/4.jpg" alt=""></div>
+                      <figcaption>
+                        <h3>Nome do portfólio</h3>
+                        <p>
+                          <a href="static/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Legenda do portfólio aqui"><i class="icon-zoom-in icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="#"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="widget">
+              <div class="footer_logo">
+                <h3><a href="/"><i class="icon-tint"></i> Lembre-se</a></h3>
+              </div>
+              <address>
+                        <strong>Lembre-se Company Inc.</strong><br>
+                      Somestreet KW 101, Park Village W.01<br>
+                      Jacarta 13426 Indonésia
+                   </address>
+              <p>
+                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                <i class="icon-envelope-alt"></i> email@domainname.com
+              </p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Navegar pelas páginas</h5>
+              <ul class="link-list">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="/termos">Termos e condições</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Comunicados de imprensa</a></li>
+                <li><a href="#">O que fizemos</a></li>
+                <li><a href="#">Nosso fórum de suporte</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Do flickr</h5>
+              <div class="flickr_badge">
+                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p><span>&copy; Lembre-se Inc. Todos os direitos reservados</span></p>
+              </div>
+
+            </div>
+
+            <div class="span6">
+              <div class="credits">
+                Criado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
+
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <script src="static/js/modernizr.custom.js"></script>
+  <script src="static/js/toucheffects.js"></script>
+  <script src="static/js/google-code-prettify/prettify.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/portfolio/jquery.quicksand.js"></script>
+  <script src="static/js/portfolio/setting.js"></script>
+  <script src="static/js/animate.js"></script>
+
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

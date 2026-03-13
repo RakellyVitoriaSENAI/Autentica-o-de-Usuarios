@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lembre-se - Blog de Inovação e Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acompanhe as últimas novidades sobre tecnologia, design e marketing digital." />
+  <meta name="author" content="Lembre-se Inc." />
+
+  <link href="static/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="static/css/prettyPhoto.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <link id="t-colors" href="static/color/default.css" rel="stylesheet" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="static/ico/favicon.png" />
+
+  </head>
+
+<body>
+<audio autoplay loop hidden>
+  <source src="static/musica/Lembre de Mim (Canção de Ninar) (De _Viva - A Vida é uma Festa__Com letra)(MP3_160K).mp3" type="audio/mpeg">
+</audio>
+  <div id="wrapper">
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <ul class="topmenu">
+                <li><a href="/">Início</a> &#47;</li>
+                <li><a href="/termos">Termos</a> &#47;</li>
+                <li><a href="#">Política de privacidade</a></li>
+              </ul>
+            </div>
+            <div class="span6">
+
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-circled icon-bglight icon-facebook"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-circled icon-bglight icon-twitter"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-circled icon-linkedin icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-circled icon-pinterest  icon-bglight"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google +"><i class="icon-circled icon-google-plus icon-bglight"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <h1><a href="/"><i class="icon-tint"></i> Lembre-se</a></h1>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li><a href="/">Início</a></li>
+                    <li class="dropdown active">
+                      <a href="#">Recursos<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/tipografia">Tipografia</a></li>
+                        <li><a href="/componente">Componentes</a></li>
+                        <li><a href="/icone">Ícones</a></li>
+                        <li><a href="/variacao_icone">Variações de ícones</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Páginas <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/sobre">Sobre nós</a></li>
+                        <li><a href="/tabela">Tabelas de preços</a></li>
+                        <li><a href="/404">404</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfólio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/portfolio2">Portfólio 2 colunas</a></li>
+                        <li><a href="/portfolio3">Portfólio 3 colunas</a></li>
+                        <li><a href="/portfolio4">Portfólio 4 colunas</a></li>
+                        <li><a href="/detalhe_portifolio">Detalhes do portfólio</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/blog_esquerda">Blog barra lateral esquerda</a></li>
+                        <li><a href="/blog_direita">Blog barra lateral direita</a></li>
+                        <li><a href="/post_esquerda">Post barra lateral esquerda</a></li>
+                        <li><a href="/post_direita">Post barra lateral direita</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/contato">Contato </a>
+                    </li>
+                    <li>
+                          <a href="/deslogar" class="text-danger">
+                              <i class="bi bi-box-arrow-right">
+                                  Sair {{ session.get("usuario_nome") }}
+                              </i>
+                          </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="inner-heading">
+              <h2>Blog barra lateral direita</h2>
+            </div>
+          </div>
+          <div class="span8">
+            <ul class="breadcrumb">
+              <li><a href="/">Início</a> <i class="icon-angle-right"></i></li>
+              <li><a href="#">Blog</a> <i class="icon-angle-right"></i></li>
+              <li class="active">Blog com barra lateral direita</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+
+          <div class="span8">
+            <article>
+              <div class="row">
+
+                <div class="span8">
+                  <div class="post-image">
+                    <div class="post-heading">
+                      <h3><a href="#">Como criar uma estratégia de conteúdo eficiente</a></h3>
+                    </div>
+
+                    <img src="static/img/dummies/blog/img1.jpg" alt="" />
+                  </div>
+                  <div class="meta-post">
+                    <a href="#" class="author">Por<br /> Admin</a>
+                    <a href="#" class="date">10 Jun<br /> 2013</a>
+                  </div>
+                  <div class="post-entry">
+                    <p>
+                      Descubra os passos fundamentais para planejar, produzir e distribuir conteúdo que realmente engaja o seu público-alvo e gera resultados concretos para o seu negócio. Entenda a importância de uma linha editorial sólida e como medir o sucesso de cada publicação para ajustar a sua comunicação continuamente...
+                    </p>
+                    <a href="#" class="btn btn-color">Leia mais <i class="icon-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="row">
+
+                <div class="span8">
+                  <div class="post-slider">
+                    <div class="post-heading">
+                      <h3><a href="#">3 Ferramentas indispensáveis para o seu time de design</a></h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="flexslider">
+                      <ul class="slides">
+                        <li>
+                          <img src="static/img/dummies/blog/img1.jpg" alt="" />
+                        </li>
+                        <li>
+                          <img src="static/img/dummies/blog/img2.jpg" alt="" />
+                        </li>
+                        <li>
+                          <img src="static/img/dummies/blog/img3.jpg" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                    </div>
+                  <div class="meta-post">
+                    <a href="#" class="author">Por<br /> Admin</a>
+                    <a href="#" class="date">10 Jun<br /> 2013</a>
+                  </div>
+                  <div class="post-entry">
+                    <p>
+                      A produtividade e a colaboração andam lado a lado quando utilizamos as plataformas corretas. Neste artigo, listamos as soluções mais recomendadas por especialistas para facilitar o fluxo de trabalho da sua equipe, desde a prototipagem interativa até a entrega final dos arquivos para os desenvolvedores...
+                    </p>
+                    <a href="#" class="btn btn-color">Leia mais <i class="icon-angle-right"></i></a>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+
+            <article>
+              <div class="row">
+
+                <div class="span8">
+                  <div class="post-quote">
+                    <div class="post-heading">
+                      <h3><a href="#">A importância do design centrado no usuário</a></h3>
+                    </div>
+
+
+                  </div>
+                  <div class="meta-post">
+                    <a href="#" class="author">Por<br /> Admin</a>
+                    <a href="#" class="date">10 Jun<br /> 2013</a>
+                  </div>
+                  <div class="post-entry">
+                    <blockquote>
+                      "O bom design não é apenas o que parece ou o que se sente. O design é como funciona. Colocar o usuário no centro de cada decisão é o verdadeiro segredo para criar produtos digitais que as pessoas amam usar todos os dias."
+                    </blockquote>
+                    <a href="#" class="btn btn-color">Leia mais <i class="icon-angle-right"></i></a>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="row">
+
+                <div class="span8">
+                  <div class="post-video">
+                    <div class="post-heading">
+                      <h3><a href="#">Entendendo o comportamento do consumidor digital</a></h3>
+                    </div>
+                    <div class="video-container">
+                      <iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">          </iframe>
+                    </div>
+                  </div>
+                  <div class="meta-post">
+                    <a href="#" class="author">Por<br /> Admin</a>
+                    <a href="#" class="date">10 Jun<br /> 2013</a>
+                  </div>
+                  <div class="post-entry">
+                    <p>
+                      Neste vídeo, exploramos como os hábitos de consumo mudaram com a aceleração digital e o que as empresas precisam fazer para se adaptar. Aprenda a ler os dados de navegação e a interpretar os sinais que o seu cliente deixa ao interagir com a sua marca na internet...
+                    </p>
+                    <a href="#" class="btn btn-color">Leia mais <i class="icon-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div id="pagination">
+              <span class="all">Página 1 de 3</span>
+              <span class="current">1</span>
+              <a href="#" class="inactive">2</a>
+              <a href="#" class="inactive">3</a>
+            </div>
+          </div>
+
+          <div class="span4">
+
+            <aside class="right-sidebar">
+
+              <div class="widget">
+                <form>
+                  <div class="input-append">
+                    <input class="span2" id="appendedInputButton" type="text" placeholder="Digite aqui">
+                    <button class="btn btn-color" type="submit">Buscar</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="widget">
+
+                <h5 class="widgetheading">Categorias</h5>
+
+                <ul class="cat">
+                  <li><i class="icon-angle-right"></i> <a href="#">Web design</a><span> (20)</span></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Negócios online</a><span> (11)</span></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Estratégia de marketing</a><span> (9)</span></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Tecnologia</a><span> (12)</span></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Sobre finanças</a><span> (18)</span></li>
+                </ul>
+              </div>
+
+              <div class="widget">
+
+                <h5 class="widgetheading">Postagens recentes</h5>
+
+                <ul class="cat">
+                  <li><i class="icon-angle-right"></i> <a href="#">Como otimizar a conversão do seu site</a></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Tendências de design para o próximo ano</a></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">O papel do SEO na estratégia digital</a></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Dicas práticas para retenção de clientes</a></li>
+                  <li><i class="icon-angle-right"></i> <a href="#">Construindo uma marca forte online</a></li>
+                </ul>
+              </div>
+
+              <div class="widget">
+
+                <h5 class="widgetheading">Video</h5>
+                <div class="video-container">
+                  <iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">          </iframe>
+                </div>
+              </div>
+
+              <div class="widget">
+                <h5 class="widgetheading">Galeria do Flickr</h5>
+                <div class="flickr_badge">
+                  <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="widget">
+
+                <h5 class="widgetheading">Sobre o Blog</h5>
+                <p>
+                    Lembre-se compartilha conteúdos exclusivos sobre design, desenvolvimento e estratégias de negócios para ajudar você a alcançar seus objetivos no mercado digital.
+                </p>
+
+              </div>
+            </aside>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="widget">
+              <div class="footer_logo">
+                <h3><a href="/"><i class="icon-tint"></i> Lembre-se</a></h3>
+              </div>
+              <address>
+                        <strong>Lembre-se company Inc.</strong><br>
+                      Rua Qualquer KW 101, Vila do Parque W.01<br>
+                      Jacarta 13426 Indonésia
+                   </address>
+              <p>
+                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                <i class="icon-envelope-alt"></i> email@seudominio.com
+              </p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Navegar pelas páginas</h5>
+              <ul class="link-list">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="/termos">Termos e condições</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Comunicado de imprensa</a></li>
+                <li><a href="#">O que fizemos</a></li>
+                <li><a href="#">Nosso fórum de suporte</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Do Flickr</h5>
+              <div class="flickr_badge">
+                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p><span>&copy; Lembre-se Inc. Todos os direitos reservados</span></p>
+              </div>
+
+            </div>
+
+            <div class="span6">
+              <div class="credits">
+                Criado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
+
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <script src="static/js/modernizr.custom.js"></script>
+  <script src="static/js/toucheffects.js"></script>
+  <script src="static/js/google-code-prettify/prettify.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/portfolio/jquery.quicksand.js"></script>
+  <script src="static/js/portfolio/setting.js"></script>
+  <script src="static/js/animate.js"></script>
+
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
